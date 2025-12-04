@@ -123,3 +123,4 @@ Follow Us
 
 .footer__copy
 &#169; All Rights Reserved By Bedimcode
+42:15
