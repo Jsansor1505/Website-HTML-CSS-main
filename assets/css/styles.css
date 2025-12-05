@@ -459,7 +459,7 @@ img {
 }
 
 .favourite__button {
-  padding: 25rem;
+  padding: 2.5rem;
   font-size: 1.25rem;
   position: absolute;
   bottom: 1.25rem;
@@ -511,21 +511,118 @@ img {
 .visit__img {}
 
 /*=============== FOOTER ===============*/
-.footer__container {}
+.footer {
+  padding-block: 3rem 2rem;
+}
 
-.footer__data {}
+.footer__container {
+  position: relative;
+  row-gap: 4rem;
+}
 
-.footer__description {}
+.footer__logo {
+  display: inline-block;
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  margin-bottom: .5rem;
+  transition: color .4s;
+}
 
-.footer__bread {}
+.footer__logo:hover {
+  color: var(--first-color-alt);
+}
 
-.footer__img {}
+.footer_content {
+  grid-template-columns: repeat(2, max-content);
+  gap: 4rem 2rem;
+}
+
+.footer__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.footer__list {
+  display: grid;
+  row-gap: .75rem;
+}
+
+.footer__info {
+  font-style: normal;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.footer__social a {
+  color: var(--title-color);
+  font-size: 1.5rem;
+  transition: color .4s;
+}
+
+.footer__social a:hover {
+  color: var(--first-color);
+}
+
+.footer__img-1,
+.footer__img-2 {
+  position: absolute;
+}
+
+.footer__img-1 {
+  width: 60px;
+  top: 2.5rem;
+  right: 1.5rem;
+}
+
+.footer__img-2 {
+  width: 70px;
+  top: 17rem;
+  left: 9rem;
+}
+
+.footer__copy {
+  display: block;
+  margin-top: 6rem;
+  text-align: center;
+  font-size: var(--small-font-size);
+}
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsl(28, 12%, 15%);
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: hsl(28, 12%, 15%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(28, 12%, 35%);
+}
 
 /*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--container-color);
+  color: var(--title-color);
+  box-shadow: 0 12px 24px hsla(0, 0%, 0%, .3);
+  display: inline-flex;
+  padding: 6px;
+  font-size: 1.25rem;
+  z-index: var(--z-tooltip);
+  transition: bottom .4s, transform .4s;
+}
 
+.scrollup:hover {
+  transform: translateY(-.5rem);
+}
 
 /* Show Scroll Up */
 
