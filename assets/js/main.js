@@ -78,4 +78,3 @@ sr.reveal('.new__card:nth-child(2) img', {rotate: {z: 15}, distance: 0, delay: 6
 sr.reveal('.new__card:nth-child(3) img', {rotate: {z: -30}, distance: 0, delay: 900 })
 sr.reveal('.favourite__card img', {interval: 100, rotate: {z: 15}, distance: 0})
 sr.reveal('.footer__container', {scale: 1})
-//Cambio
